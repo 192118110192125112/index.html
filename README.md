@@ -1,12 +1,15 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DASHBOARD</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
+
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
         body {
             font-family: 'Montserrat', sans-serif;
@@ -33,7 +36,7 @@
             text-align: center;
             font-size: 0.75rem;
             font-weight: 400;
-            letter-spacing: 10px; /* Classy Spacing */
+            letter-spacing: 10px;
             text-transform: uppercase;
             transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
             background: transparent;
@@ -44,20 +47,22 @@
             color: #000000;
             border-color: #ffffff;
             transform: scale(1.02);
-            letter-spacing: 12px; /* Hover effect */
+            letter-spacing: 12px;
         }
 
         @media (max-width: 600px) {
-            .tile { letter-spacing: 6px; }
+            .tile {
+                letter-spacing: 6px;
+            }
         }
     </style>
 </head>
+
 <body>
 
     <div class="tiles-grid">
         <a href="countdown.html" class="tile">Exam Tracker</a>
-        
-        </div>
+    </div>
 
 </body>
 </html>
