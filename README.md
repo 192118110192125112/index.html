@@ -10,7 +10,7 @@
 
         body {
             font-family: 'Montserrat', sans-serif;
-            background-color: #000000;
+            background-color: #000000; /* Pure Black */
             height: 100vh;
             display: flex;
             align-items: center;
@@ -18,24 +18,22 @@
         }
 
         .tiles-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            width: 90%;
-            max-width: 1000px;
+            display: flex;
+            justify-content: center;
+            width: 100%;
         }
 
         .tile {
             text-decoration: none;
             color: rgba(255, 255, 255, 0.7);
             border: 1px solid rgba(255, 255, 255, 0.15);
-            padding: 40px 20px;
+            padding: 30px 60px;
             text-align: center;
-            font-size: 0.75rem;
+            font-size: 0.8rem;
             font-weight: 400;
-            letter-spacing: 10px; /* Classy Spacing */
+            letter-spacing: 12px; /* Professional Spacing */
             text-transform: uppercase;
-            transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+            transition: all 0.5s ease;
             background: transparent;
         }
 
@@ -43,21 +41,15 @@
             background: #ffffff;
             color: #000000;
             border-color: #ffffff;
-            transform: scale(1.02);
-            letter-spacing: 12px; /* Hover effect */
-        }
-
-        @media (max-width: 600px) {
-            .tile { letter-spacing: 6px; }
+            transform: translateY(-5px);
         }
     </style>
 </head>
 <body>
 
-    <div class="">
+    <div class="tiles-grid">
         <a href="countdown.html" class="tile">Exam Tracker</a>
-        
-        </div>
+    </div>
 
 </body>
 </html>
